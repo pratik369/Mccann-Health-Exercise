@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MHD Exercise</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ </head>
+
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">MHD Exercise</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Works</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li>
+                      <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</a>
+                  </li>
+              </ul>
+              <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+                  <li><a href="#">Web design</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Graphic design</a></li>
+                  <li><a href="#">Print</a></li>
+                  <li><a href="#">Motion</a></li>
+                  <li><a href="#">Mobile apps</a></li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-3 col-md-2 sidebar ">
+              <ul class="nav nav-sidebar">
+                  <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Reports 1</a></li>
+                  <li><a href="#">Reports 2</a></li>
+
+                  <li><a href="#">Analytic1</a></li>
+                  <li><a href="#">Analytics2</a></li>
+
+                  <li><a href="#">Export</a></li>
+                  <li><a href="#">Export2</a></li>
+
+              </ul>
+              <ul class="nav nav-sidebar">
+                  <li><a href="">Nav item</a></li>
+                  <li><a href="">One more nav</a></li>
+                  <li><a href="">Another nav item</a></li>
+                  <li><a href="">More navigation</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                  <li><a href="">Nav item</a></li>
+                  <li><a href="">One more nav</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+              <h1 class="page-header">Work Board</h1>
+              <p>Welcome to my WorkBoard</p>
+
+              <section id="section1">
+
+                  <div class="jumbotron">
+                      <div class="container">
+                          <h1>Hello Jason</h1>
+                          <p> This is a Section</p>
+                          <p><a id="button1" class="btn btn-primary btn-lg" href="#" role="button">Click here to toggle section 2 »</a></p>
+                      </div>
+                  </div>
+
+              </section>
+
+              <section id="section2">
+
+                  <div class="jumbotron">
+                      <div class="container">
+                          <h1>Hello Jason</h1>
+                          <p> This is another Section</p>
+                          <p><a id="button2" class="btn btn-primary btn-lg" href="#" role="button"> Click here to toggle section 1 »</a></p>
+                      </div>
+                  </div>
+
+              </section>
+
+
+          </div>
+
+
+      </div>
+  </div>
+
+
+      <hr>
+
+      <footer class="pull-right">
+        <p>MHD Exercise © Company 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    $("#section2").toggle(1000);
+                });
+            });
+
+            $(document).ready(function(){
+                $("#button2").click(function(){
+                    $("#section1").toggle(1000);
+                });
+            });
+    </script>
+
+  
+
+</body></html>
